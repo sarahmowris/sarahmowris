@@ -1,86 +1,155 @@
-body {
+body, html {
+	padding-top: 55px;
 	width: 100%;
-  text-align: center;
-  margin: 0;
-  height: 100%;
+	height: 100%;
+  	font-family: 'Merriweather', serif;
 }
-img{
-   display: inline-block;
-    height: 500px;
-    width: 100%;
-    overflow: hidden;
+@media (min-width: 992px) {
+	body {
+		padding-top: 0;
+		padding-left: 12rem;
+	}
 }
-.nav a {
-  float: right;
-  display: block;
-  color: rgb(250, 250, 250);
-  text-align: center;
-  padding: 8px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  width: 60px;
- 	display: inline-block;
-}
-.nav a:hover {
-  color: rgb(115, 115, 115);
-}
-.active {
-  background-color: none;
-  color: white;
-}
-.circle img{
-  border-radius: 50%;
-}
-.header {
-	background-color: rgb(0, 153, 153);
-  background-size: cover;
-  padding: 250px 0;
- 	margin: 0;
-}
-.header h1 {
-  color: rgb(255, 255, 255)
-}
-.profile {
-	margin: 40px auto;
-	background-color: rgb(255, 255, 255);
-	overflow: auto;
-	width: 75%;
-	border-radius: 4px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  display: block;
-}
-.profile h3{
-  color: rgb(0, 204, 204);
-  text-align: left;
-}
-.profile p {
-  text-align: left;
-  margin: 5px;
-}
-h1 {
-  font-family: 'Lato';
+img {
+	width: 100%;
+	border-radius: 50%;
+	align-items: center;
+
 }
 h2 {
-	font-family:'Lato', sans-serif;
+	color: rgb(179, 71, 0);
 	font-size: 40px;
-	font-weight: 500;
-  color: rgb(0, 153, 153);
 }
-h3  {
-	font-family: 'Lato', sans-serif;
-	font-size: 22px;
-	font-weight: 500;
-  color: rgb(255, 208, 226);
-}
-h4 {
-  font-family: 'Lato', sans-serif;
-	font-size: 22px;
-	font-weight: 500;
-  color: rgb(0, 0, 0)
+h3 {
+	color: rgb(204, 82, 0);
+	font-size: 30px;
 }
 p {
-	color: rgb(128, 128, 128);
-	font-size: 22px;
+	color: rgb(140, 140, 140);
 }
+	p strong {
+		color: rgb(77, 77, 77);
+	}
+u {
+	color: rgb(204, 82, 0);
+}
+#navigation a {
+	color: rgb(255, 255, 255);
+	padding: 15px;
+}
+	#navigation a.hover, a.focus, a.active {
+	color: rgb(255, 153, 128);
+	}
+
+#navigation .navbar-nav .item .link {
+	font-weight: 500;
+	text-transform: uppercase;
+}
+@media (min-width: 992px) {
+	#navigation {
+		text-align: center;
+		flex-direction: column;
+		top: 0;
+		left: 0;
+		position: fixed;
+		width: 12rem;
+		height: 100vh;
+		display: flex;
+	}
+	#navigation .navbar {
+		display: flex;
+		margin: auto auto 0;
+		padding: 0.5rem;
+	}
+	#navigation .navbar-collapse {
+		display: flex;
+		align-items: flex-start;
+		flex-grow: 0;
+		width: 100%;
+		margin-bottom: auto;
+	}
+	#navigation .navbar-collapse .navbar-nav {
+		flex-direction: column;
+		width: 100%;
+	}
+		#navigation .navbar-collapse .navbar-nav .item {
+				display: block;
+			}
+			#navigation .navbar-collapse .navbar-nav .item .link {
+				display: block;
+			}
+}
+
+.header {
+	background-image: url('file:///Users/sarahmowris/Documents/project/IMG_4111.jpg');
+	background-size: cover;
+	position: relative;
+	top: -32px; 
+	width: 100%;
+	min-height: 100%;
+  	padding: 100px 0;
+ 	margin: 0;
+ 	text-align: left;
+ }
+	.header h1 {
+  		color: rgb(179, 71, 0);
+  		font-size: 70px;
+	}
+	.header h2{
+		color: rgb(102, 41, 0);
+		font-size: 50px;
+	}
+
+.profile {
+	text-align: center;
+}
+.text-lg {
+	font-size: 24px;
+}
+hr.divider {
+	max-width: 300px;
+	border-color: rgb(41, 43, 44);
+}
+.bg-primary {
+	background-color: rgb(179, 71, 0) !important;
+}
+.experience{
+	background-color: rgb(230, 242, 255);
+}
+	p.experience {
+		color: rgb(153, 153, 153);
+	}
+	h3.experience {
+		color: rgb(250, 250, 250);
+		text-transform: uppercase;
+	}
+.technical {
+	background-color: rgb(255, 255, 255);
+	}
+	.technical ul {
+		color: rgb(153, 153, 153);
+		font-size: 22px;
+	}
+	.technical .work{
+		color: rgb(153, 153, 153);
+	}
+	.technical .work strong{
+		color: rgb(0, 0, 0);
+	}
+	@media (max-width: 767px) {
+		.technical .work{
+			text-align: center;
+		}
+		.technical .work h3{
+			text-align: left;
+		}
+	}
+.interests {
+	background-color: rgb(230, 242, 255);
+}
+	.interests p {
+		text-align: center;
+	}
+
+
+

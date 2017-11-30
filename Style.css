@@ -81,10 +81,10 @@ u {
 }
 
 .header {
-	background-image: url('file:///Users/sarahmowris/Documents/project/IMG_4111.jpg');
+	background-image: url('sarahmowris/IMG_4111.jpg');
 	background-size: cover;
 	position: relative;
-	top: -32px; 
+	top: -32px;
 	width: 100%;
 	min-height: 100%;
   	padding: 100px 0;
@@ -150,6 +150,3 @@ hr.divider {
 	.interests p {
 		text-align: center;
 	}
-
-
-

@@ -99,6 +99,14 @@ u {
 		color: rgb(102, 41, 0);
 		font-size: 50px;
 	}
+	@media(max-width: 768px) {
+		.header h1 {
+			font-size: 50px;
+		}
+		.header h2 {
+			font-size: 35px;
+		}
+	}
 
 .profile {
 	text-align: center;

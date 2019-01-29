@@ -81,7 +81,7 @@ u {
 }
 
 .header {
-	background-image: url('IMG_4111.jpg') center center ;
+	background-image: url('IMG_4111.jpg');
 	background-size: cover;
 	position: relative;
 	top: -32px;
